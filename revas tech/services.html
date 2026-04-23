@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Revas Tech</title>
+    <meta name="description" content="Our comprehensive services: software development, cybersecurity, cloud solutions, data analytics, mobile apps, AI integration, DevOps & IT consulting.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><em>Revas</em>Tech</a>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header services-header">
+        <div class="breadcrumb"><a href="index.html">Home</a><i>/</i>Services</div>
+        <h1>Our Services</h1>
+        <p>Comprehensive technology solutions for your business success.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <span class="label">What We Offer</span>
+            <h2>Full Range of Solutions</h2>
+            <p>From development to security, we cover every aspect of your technology needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card wide"><div class="service-icon">💻</div><h3>Software Development</h3><p>Custom web and desktop applications built with React, Angular, Node.js, Python, and .NET. From MVP to enterprise systems, we build scalable, maintainable software tailored to your exact business requirements.</p></div>
+            <div class="service-card"><div class="service-icon">🔒</div><h3>Cyber Security</h3><p>Vulnerability assessments, penetration testing, security audits, and 24/7 threat monitoring. We help protect your business from cyber threats with industry-best practices and compliance (SOC 2, GDPR, HIPAA).</p></div>
+            <div class="service-card"><div class="service-icon">☁️</div><h3>Cloud Solutions</h3><p>AWS, Azure, and GCP migration, architecture design, and managed services. Serverless computing, containers (Docker/Kubernetes), and cost-optimized cloud infrastructure.</p></div>
+            <div class="service-card"><div class="service-icon">📊</div><h3>Data Analytics</h3><p>Interactive dashboards (Tableau, Power BI), data warehousing, ETL pipelines, and ML-powered predictive analytics. Turn raw data into actionable business intelligence.</p></div>
+            <div class="service-card"><div class="service-icon">📱</div><h3>Mobile App Development</h3><p>Native iOS (Swift) and Android (Kotlin) apps, plus cross-platform React Native solutions. App store optimization and post-launch support included.</p></div>
+            <div class="service-card"><div class="service-icon">🤖</div><h3>AI Integration</h3><p>Custom ML models, natural language processing, computer vision, and AI-powered automation. Integrate intelligent features into your existing systems.</p></div>
+            <div class="service-card"><div class="service-icon">⚙️</div><h3>DevOps & CI/CD</h3><p>Automated pipelines (GitHub Actions, Jenkins), infrastructure as code (Terraform), container orchestration, and reliable deployment strategies with zero downtime.</p></div>
+            <div class="service-card"><div class="service-icon">📋</div><h3>IT Consulting</h3><p>Digital transformation strategy, IT roadmapping, system architecture, and technology selection. We help you make informed decisions for long-term success.</p></div>
+        </div>
+    </section>
+
+    <div class="diag-down"></div>
+
+    <section class="section section-dark">
+        <div class="section-heading">
+            <span class="label">How We Work</span>
+            <h2>Our Process</h2>
+            <p>A structured approach to ensure quality on every project.</p>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step"><div class="step-number">01</div><h3>Discovery</h3><p>Deep dive into your requirements, goals, and technical environment.</p></div>
+            <div class="process-step"><div class="step-number">02</div><h3>Planning</h3><p>Detailed roadmap with timeline, resources, and milestones.</p></div>
+            <div class="process-step"><div class="step-number">03</div><h3>Development</h3><p>Sprint-based builds with bi-weekly progress updates.</p></div>
+            <div class="process-step"><div class="step-number">04</div><h3>Testing</h3><p>Comprehensive QA, security audits, and performance testing.</p></div>
+            <div class="process-step"><div class="step-number">05</div><h3>Launch</h3><p>Staged rollout with quick rollback capability.</p></div>
+            <div class="process-step"><div class="step-number">06</div><h3>Support</h3><p>90-day warranty, ongoing maintenance & 24/7 monitoring.</p></div>
+        </div>
+    </section>
+
+    <section class="cta-section cta-bg-image">
+        <h2>Need a Custom Solution?</h2>
+        <p>Tell us about your project and we'll respond within 24 hours.</p>
+        <a href="contact.html" class="btn btn-green">Request a Quote</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about"><a href="index.html" class="logo"><em>Revas</em>Tech</a><p>Delivering innovative technology solutions that drive business growth and digital transformation across industries.</p></div>
+            <div><h4>Company</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Software Dev</a></li><li><a href="services.html">Cyber Security</a></li><li><a href="services.html">Cloud Solutions</a></li><li><a href="services.html">Data Analytics</a></li></ul></div>
+            <div><h4>Contact</h4><ul class="footer-links"><li class="plain-text">info@revastech.com</li><li class="plain-text">+1 (555) 123-4567</li><li class="plain-text">123 Tech Street<br>Silicon Valley, CA 94025</li></ul></div>
+        </div>
+        <div class="newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter for the latest tech insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-green">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Revas Tech. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption">
+            <div id="modalTitle" class="modal-title"></div>
+            <div id="modalProfession" class="modal-profession"></div>
+            <div id="modalText" class="modal-content-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

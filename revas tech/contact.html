@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Revas Tech</title>
+    <meta name="description" content="Contact Revas Tech for project consultations. Email, call +233 531 629 095, or send us a message. We respond within 24 hours.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><em>Revas</em>Tech</a>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header contact-header">
+        <div class="breadcrumb"><a href="index.html">Home</a><i>/</i>Contact</div>
+        <h1>Contact Us</h1>
+        <p>Have a question or want to start a project? We'd love to hear from you.</p>
+    </section>
+
+    <section class="section contact-section">
+        <div class="contact-grid">
+
+            <div class="contact-info">
+                <h3>Let's Start a Conversation</h3>
+                <p>Ready to bring your ideas to life? Get in touch with our expert team. We respond within 24 hours and offer free consultations for new projects.</p>
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 16px;">
+                    <span style="color: var(--primary); font-size: 18px;">⚡</span>
+                    <span style="color: var(--text-normal); font-size: 13px;">Average response time: <strong>4 hours</strong></span>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon">📍</div>
+                    <div><h4>Our Office</h4><p>123 Tech Street, Silicon Valley<br>CA 94025, United States</p></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-icon">📧</div>
+                    <div><h4>Email Us</h4><p><a href="mailto:info@revastech.com">info@revastech.com</a><br><a href="mailto:support@revastech.com">support@revastech.com</a></p></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-icon">📞</div>
+                    <div><h4>Call Us</h4><p><a href="tel:+233531629095">+233 531 629 095</a><br><a href="https://wa.me/233531629095" target="_blank">WhatsApp</a></p></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-icon">🕐</div>
+                    <div><h4>Working Hours</h4><p>Mon – Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 2:00 PM<br>Sun: Closed</p></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-icon">🌐</div>
+                    <div><h4>Follow Us</h4><p><a href="https://www.linkedin.com/in/abdul-rashid-yussif-208b87265/" style="margin-right: 12px;">LinkedIn</a><a href="https://x.com/AbdulYussi33165" style="margin-right: 12px;">X</a><a href="https://github.com/rashlast395-prog">GitHub</a></p></div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="text-align: center; margin-bottom: 30px; color: var(--text-bright); font-size: 24px; font-weight: 800;">Send Us a Message</h3>
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" data-service="service_fgwgzmo" data-template="template_dsbj8uj">
+                     <div class="form-row">
+                         <div class="form-group">
+                             <label>First Name</label>
+                             <input type="text" name="from_name_first" placeholder="John" required>
+                         </div>
+                         <div class="form-group">
+                             <label>Last Name</label>
+                             <input type="text" name="from_name_last" placeholder="Doe" required>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label>Email</label>
+                         <input type="email" name="from_email" placeholder="rashid@example.com" required>
+                     </div>
+                     <div class="form-group">
+                         <label>Phone</label>
+                         <input type="tel" name="from_phone" placeholder="+233 531 629 095">
+                     </div>
+                     <div class="form-group">
+                         <label>Service</label>
+                         <select name="service">
+                             <option value="">Select a service</option>
+                             <option>Software Development</option>
+                             <option>Cyber Security</option>
+                             <option>Cloud Solutions</option>
+                             <option>Data Analytics</option>
+                             <option>Mobile App Development</option>
+                             <option>AI Integration</option>
+                             <option>DevOps & CI/CD</option>
+                             <option>IT Consulting</option>
+                             <option>Other</option>
+                         </select>
+                     </div>
+                     <div class="form-group">
+                         <label>Message</label>
+                         <textarea name="message" placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                     </div>
+                    <button type="submit" class="btn btn-green" style="width:100%;">Send Message</button>
+                </form>
+
+                <div id="successMessage" style="display:none; text-align:center; padding:50px 0;">
+                    <div style="font-size:48px; margin-bottom:18px;">✅</div>
+                    <h3 style="margin-bottom:8px; color:var(--text-bright);">Message Sent!</h3>
+                    <p style="color:var(--text-dim); max-width:300px; margin:0 auto; line-height:1.7;">Thank you. We'll review your message and respond within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <h3 style="color: var(--text-bright); font-size: 24px; margin-bottom: 20px;">Visit Our Office</h3>
+                <p style="color: var(--text-dim); margin-bottom: 30px;">Located in the heart of Silicon Valley</p>
+            </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290887048!2d-122.08424968469203!3d37.42199997982267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1635781710014!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about"><a href="index.html" class="logo"><em>Revas</em>Tech</a><p>Delivering innovative technology solutions that drive business growth and digital transformation across industries.</p></div>
+            <div><h4>Company</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Software Dev</a></li><li><a href="services.html">Cyber Security</a></li><li><a href="services.html">Cloud Solutions</a></li><li><a href="services.html">Data Analytics</a></li></ul></div>
+            <div><h4>Contact</h4><ul class="footer-links"><li class="plain-text">info@revastech.com</li><li class="plain-text">+1 (555) 123-4567</li><li class="plain-text">123 Tech Street<br>Silicon Valley, CA 94025</li></ul></div>
+        </div>
+        <div class="newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter for the latest tech insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-green">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Revas Tech. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption">
+            <div id="modalTitle" class="modal-title"></div>
+            <div id="modalProfession" class="modal-profession"></div>
+            <div id="modalText" class="modal-content-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

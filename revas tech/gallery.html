@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Revas Tech</title>
+    <meta name="description" content="Explore Revas Tech's gallery: our workspace, team, projects, and company culture through images.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><em>Revas</em>Tech</a>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header gallery-header">
+        <div class="breadcrumb"><a href="index.html">Home</a><i>/</i>Gallery</div>
+        <h1>Our Gallery</h1>
+        <p>Explore our workspace, completed projects, and team events. A visual journey through innovation and collaboration.</p>
+    </section>
+
+    <section class="section">
+        <div class="gallery-grid">
+            <div class="gallery-item tall">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=500&h=540&fit=crop" alt="Office" loading="lazy">
+                <div class="gallery-overlay"><p>Modern Office Space</p><span>Workspace</span></div>
+            </div>
+            <div class="gallery-item"><img src="/images/software.jpg" alt="Dev" loading="lazy"><div class="gallery-overlay"><p>Software Development</p><span>Development</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&h=260&fit=crop" alt="Server" loading="lazy"><div class="gallery-overlay"><p>Server Infrastructure</p><span>Infrastructure</span></div></div>
+            <div class="gallery-item"><img src="/images/teams.jpg" alt="Meeting" loading="lazy"><div class="gallery-overlay"><p>Team Collaboration</p><span>Teamwork</span></div></div>
+            <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=260&fit=crop" alt="Data Center" loading="lazy"><div class="gallery-overlay"><p>Data Center Operations</p><span>Infrastructure</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=260&fit=crop" alt="Workstation" loading="lazy"><div class="gallery-overlay"><p>Developer Workstation</p><span>Development</span></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=260&fit=crop" alt="Workshop" loading="lazy"><div class="gallery-overlay"><p>Tech Workshop</p><span>Training</span></div></div>
+            <div class="gallery-item"><img src="/images/network.jpg" alt="Network" loading="lazy"><div class="gallery-overlay"><p>Network Solutions</p><span>Networking</span></div></div>
+            <div class="gallery-item"><img src="/images/event.jpg" alt="Event" loading="lazy"><div class="gallery-overlay"><p>Company Event</p><span>Events</span></div></div>
+        </div>
+    </section>
+
+    <section class="cta-section cta-bg-image">
+        <h2>Like What You See?</h2>
+        <p>Let us bring the same dedication to your project.</p>
+        <a href="contact.html" class="btn btn-green">Start a Project</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about"><a href="index.html" class="logo"><em>Revas</em>Tech</a><p>Delivering innovative technology solutions that drive business growth and digital transformation across industries.</p></div>
+            <div><h4>Company</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Software Dev</a></li><li><a href="services.html">Cyber Security</a></li><li><a href="services.html">Cloud Solutions</a></li><li><a href="services.html">Data Analytics</a></li></ul></div>
+            <div><h4>Contact</h4><ul class="footer-links"><li class="plain-text">info@revastech.com</li><li class="plain-text">+1 (555) 123-4567</li><li class="plain-text">123 Tech Street<br>Silicon Valley, CA 94025</li></ul></div>
+        </div>
+        <div class="newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter for the latest tech insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-green">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Revas Tech. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption">
+            <div id="modalTitle" class="modal-title"></div>
+            <div id="modalProfession" class="modal-profession"></div>
+            <div id="modalText" class="modal-content-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

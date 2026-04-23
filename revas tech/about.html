@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Revas Tech</title>
+    <meta name="description" content="Learn about Revas Tech: our mission, values, team, and 10+ years of excellence in delivering innovative technology solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><em>Revas</em>Tech</a>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header about-header">
+        <div class="breadcrumb"><a href="index.html">Home</a><i>/</i>About</div>
+        <h1>About Revas Tech</h1>
+        <p>Our mission, values, and the people behind our success.</p>
+    </section>
+
+    <section class="section">
+        <div class="about-row image-left">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=380&fit=crop" alt="Our Office" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Founded in 2015, Revas Tech started with a simple mission: to make technology accessible and effective for businesses of all sizes. What began as a small team of passionate developers has grown into a full-service technology partner serving clients across 15+ countries.</p>
+                <p>Over the years, we have helped startups, SMEs, and enterprises navigate digital transformation with tailored solutions that deliver real, measurable results.</p>
+            </div>
+        </div>
+
+        <div class="about-row image-right">
+            <div class="about-image">
+                <img src="/images/strategy.jpg" alt="Strategy" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h3>Mission & Vision</h3>
+                <p><strong style="color:var(--text-bright)">Mission:</strong> To empower businesses by delivering innovative, reliable, and scalable technology solutions that create lasting value and competitive advantage.</p>
+                <p><strong style="color:var(--text-bright)">Vision:</strong> To be the most trusted technology partner worldwide, recognized for excellence, integrity, and turning complex challenges into elegant solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="diag-down"></div>
+
+    <section class="section section-dark">
+        <div class="section-heading">
+            <span class="label">What Drives Us</span>
+            <h2>Core Values</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-card"><span class="icon">💡</span><h3>Innovation</h3><p>Exploring new technologies and methods to deliver cutting-edge solutions.</p></div>
+            <div class="value-card"><span class="icon">🤝</span><h3>Integrity</h3><p>Transparency, honesty, and building lasting trust with every client.</p></div>
+            <div class="value-card"><span class="icon">⭐</span><h3>Excellence</h3><p>Highest quality standards in every project, regardless of size.</p></div>
+            <div class="value-card"><span class="icon">👥</span><h3>Collaboration</h3><p>Working as true partners with our clients for shared success.</p></div>
+            <div class="value-card"><span class="icon">🚀</span><h3>Growth</h3><p>Continuous learning and helping clients achieve sustainable growth.</p></div>
+            <div class="value-card"><span class="icon">🛡️</span><h3>Reliability</h3><p>Delivering on time, on budget, and above expectations every time.</p></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <span class="label">The People</span>
+            <h2>Meet Our Team</h2>
+        </div>
+        <div class="team-grid">
+            <div class="team-card"><img src="/images/CEO.jpg" alt="Alex Johnson" data-profession="CEO & Founder - 15+ years in tech leadership. Former Google engineer." loading="lazy"><div class="info"><h3>Alex Johnson</h3><p class="role">CEO & Founder</p><p style="font-size:12px;color:var(--text-dim);margin-top:4px;">15+ years in tech leadership. Former Google engineer.</p></div></div>
+            <div class="team-card"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=240&fit=crop&crop=faces" alt="Sarah Williams" data-profession="Chief Technology Officer - Expert in cloud architecture & AI systems." loading="lazy"><div class="info"><h3>Sarah Williams</h3><p class="role">Chief Technology Officer</p><p style="font-size:12px;color:var(--text-dim);margin-top:4px;">Expert in cloud architecture & AI systems.</p></div></div>
+            <div class="team-card"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=240&fit=crop&crop=faces" alt="Michael Chen" data-profession="Lead Developer - Full-stack expert. Python & React specialist." loading="lazy"><div class="info"><h3>Michael Chen</h3><p class="role">Lead Developer</p><p style="font-size:12px;color:var(--text-dim);margin-top:4px;">Full-stack expert. Python & React specialist.</p></div></div>
+            <div class="team-card"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=240&fit=crop&crop=faces" alt="Emily Davis" data-profession="Security Analyst - CISSP certified. Ethical hacking expert." loading="lazy"><div class="info"><h3>Emily Davis</h3><p class="role">Security Analyst</p><p style="font-size:12px;color:var(--text-dim);margin-top:4px;">CISSP certified. Ethical hacking expert.</p></div></div>
+        </div>
+    </section>
+
+    <section class="cta-section cta-bg-image">
+        <h2>Want to Work With Us?</h2>
+        <p>We're always looking for talented people and exciting projects.</p>
+        <a href="contact.html" class="btn btn-green">Get In Touch</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about"><a href="index.html" class="logo"><em>Revas</em>Tech</a><p>Delivering innovative technology solutions that drive business growth and digital transformation across industries.</p></div>
+            <div><h4>Company</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Software Dev</a></li><li><a href="services.html">Cyber Security</a></li><li><a href="services.html">Cloud Solutions</a></li><li><a href="services.html">Data Analytics</a></li></ul></div>
+            <div><h4>Contact</h4><ul class="footer-links"><li class="plain-text">info@revastech.com</li><li class="plain-text">+1 (555) 123-4567</li><li class="plain-text">123 Tech Street<br>Silicon Valley, CA 94025</li></ul></div>
+        </div>
+        <div class="newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter for the latest tech insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-green">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Revas Tech. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption">
+            <div id="modalTitle" class="modal-title"></div>
+            <div id="modalProfession" class="modal-profession"></div>
+            <div id="modalText" class="modal-content-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
